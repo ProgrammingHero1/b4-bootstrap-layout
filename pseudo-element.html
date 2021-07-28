@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo pseudo vai bon</title>
+    <style>
+        h1::before {
+            content: 'Hello ';
+            color: lime;
+        }
+
+        h1::after {
+            content: ' gelo';
+            color: limegreen;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: magenta;
+            font-size: 1.5em;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: magenta;
+            font-size: 1.5em;
+        }
+
+        .section-title {
+            display: inline-block;
+        }
+
+        .section-title::after,
+        .section-title:hover::before {
+            content: '';
+            display: block;
+            background-color: magenta;
+            height: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Having fun with Pseudo pseudo vai bon</h1>
+    <h1>Having fun with bondu bandobi</h1>
+    <section>
+        <h2 class="section-title">Best Quotes</h2>
+        <blockquote>Patience, persistence and perspiration make an unbeatable combination for success</blockquote>
+        <blockquote>Desire is the starting point of all achievement, not a hope, not a wish, but a keen pulsating desire
+            which transcends everything</blockquote>
+        <blockquote>Strength and growth come only through continuous effort and struggle</blockquote>
+    </section>
+    <section>
+        <p>Name* <input type="text" placeholder="Your name"></p>
+    </section>
+</body>
+
+</html>
